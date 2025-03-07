@@ -8,9 +8,9 @@ export default function Popup() {
   };
 
   return (
-    <div>
+    <div className="width-screen h-screen flex justify-center bg-gray-300 dark:bg-gray-900">
       <button
-        className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+        className="ranslate-z-12 rotate-x-0 backface-hidden opacity-50 hover:opacity-100 w-96 h-12 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
         onClick={handleToggle}
       >
         Open Popup
@@ -35,6 +35,7 @@ export default function Popup() {
           </div>
         </div>
       )}
+    
     </div>
   );
 }
