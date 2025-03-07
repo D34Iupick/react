@@ -28,11 +28,11 @@ const features = [
 
   export default function Card() {
     return (
-      <div className="overflow-hidden bg-white dark:bg-gray-800 py-24 sm:py-32">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
-            <div className="lg:pt-4 lg:pr-8">
-              <div className="lg:max-w-lg">
+      <div classNameName="overflow-hidden bg-white dark:bg-gray-800 py-24 sm:py-32">
+        <div classNameName="mx-auto max-w-7xl px-6 lg:px-8">
+          <div classNameName="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
+            <div classNameName="lg:pt-4 lg:pr-8">
+              <div classNameName="lg:max-w-lg">
                 <h2 className="text-base/7 font-semibold text-indigo-600">Deploy faster</h2>
                 <p className="mt-2 text-4xl font-semibold tracking-tight text-pretty text-gray-900 dark:text-white sm:text-5xl">
                   A better workflow
