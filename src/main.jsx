@@ -6,15 +6,16 @@ import '@fontsource/roboto/400.css';
 import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
 
-// import App from './App.jsx'
-// import Card from './card.jsx'
-// import Popup from './popup.jsx'
-import ButtonUsage from './buttonn.jsx'
+// import App from './components/App.jsx'
+// import Card from './components/card.jsx'
+// import Popup from './components/popup.jsx'
+// import ButtonUsage from './components/buttonn.jsx'
+import AccordionDtc from './components/accordion.jsx'
 
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-     <ButtonUsage />
+     <AccordionDtc/>
   </StrictMode>,
  
 )
