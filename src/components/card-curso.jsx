@@ -8,17 +8,17 @@ import { Button, CardActions } from '@mui/material';
 
 
 
-export default function CardCurso({useName, useDescription, buttonLink}) {
-  // const imgAvatar = 'https://mui.com/static/images/cards/contemplative-reptile.jpg'
 
+
+export default function CardCurso({useNameImg, useName, useDescription, buttonLink}) {
+  const MyImg = `http://localhost:5173/src/assets/imgs/${useNameImg}.jpg`
   return (
-    <div className="width-screen h-auto flex justify-center items-center bg-gray-300 dark:bg-gray-900">
-    <Card sx={{ maxWidth: 345 }}>
+
+    <Card sx={{ maxWidth: 500, alignItems: 'center', margin: 2, borderStyle: 'solid', borderColor: 'red', borderWidth: 2 }}>
       <CardActionArea>
         <CardMedia
           component="img"
-          height="140"
-          image="https://mui.com/static/images/cards/contemplative-reptile.jpg"
+          image={MyImg}
           alt="green iguana"
         />
         <CardContent>
@@ -36,6 +36,8 @@ export default function CardCurso({useName, useDescription, buttonLink}) {
         </Button>
       </CardActions>
     </Card>
-    </div>
+
+    
+    
   );
 }

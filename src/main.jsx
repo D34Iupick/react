@@ -20,11 +20,27 @@ const root = createRoot(document.getElementById('root'));
 
 
 root.render(
+  // <StrictMode>
+  //   <CardCurso useNameImg="punisher" useName="Punicher" useDescription="DEscrpionjkdgjkhsgk" buttonLink="btn"/>
+  //   <CardCurso useNameImg="wolverin" useName="Wolverin" useDescription="DEscrpionjkdgjkhsgk" buttonLink="btn"/>
+  //   <CardCurso useNameImg="deadpool" useName="Deadpool" useDescription="DEscrpionjkdgjkhsgk" buttonLink="btn"/>
+  // </StrictMode>,
   <StrictMode>
-    <CardCurso useName="Eric Sabchez Barragan" useDescription="DEscrpionjkdgjkhsgk" buttonLink="btn"/>
-    <CardCurso useName="Eric Sabchez Barragan" useDescription="DEscrpionjkdgjkhsgk" buttonLink="btn"/>
-    <CardCurso useName="Eric Sabchez Barragan" useDescription="DEscrpionjkdgjkhsgk" buttonLink="btn"/>
+  <div className="grid grid-flow-row md:grid-flow-col justify-items-center bg-gray-300 dark:bg-gray-900 p-4 m-4 align-content-center">
+    <CardCurso
+    useNameImg="punisher" useName="Punicher" useDescription="DEscrpionjkdgjkhsgk" buttonLink="btn"
+    />
+    
+    <CardCurso 
+    useNameImg="wolverin" useName="Wolverin" useDescription="DEscrpionjkdgjkhsgk" buttonLink="btn"
+    />
+
+<CardCurso
+    useNameImg="deadpool" useName="Deadpool" useDescription="DEscrpionjkdgjkhsgk" buttonLink="btn"
+    />
+  </div>
   </StrictMode>,
+
 
 
   
