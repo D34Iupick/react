@@ -7,10 +7,10 @@ import CardActionArea from '@mui/material/CardActionArea';
 import { Button, CardActions } from '@mui/material';
 
 
+export default function CardCurso({useNameImg, useName, useDescription, buttonLink, isFollowing}) {
+  
+  console.log(isFollowing);
 
-
-
-export default function CardCurso({useNameImg, useName, useDescription, buttonLink}) {
   const MyImg = `http://localhost:5173/src/assets/imgs/${useNameImg}.jpg`
   return (
 
