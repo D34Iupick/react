@@ -1,49 +1,36 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import React, { Fragment as ReactFragment } from 'react'
-import { Button } from '@mui/material'
-import './styles/tailwind.css'
+import { StrictMode } from 'react';
+import { createRoot } from 'react-dom/client';
+import React from 'react';
+import CssBaseline from '@mui/material/CssBaseline';
+import { ThemeProvider} from '@mui/material/styles';
+import AppLigthDark from './components/light-dark';
+import AccordionDtc from './components/accordion';
+import {ThemeLigthDark} from './theme/LigthDark';
+
+import './styles/tailwind.css';
 import '@fontsource/roboto/300.css';
 import '@fontsource/roboto/400.css';
 import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
+import CardCurso from './components/card-curso';
 
-// import Card from './components/card.jsx'
-// import Popup from './components/popup.jsx'
-// import ButtonUsage from './components/buttonn.jsx'
-// import AccordionDtc from './components/accordion.jsx'
-// import App from './components/App.jsx'
-import CardCurso from './components/card-curso.jsx'
+
 
 const root = createRoot(document.getElementById('root'));
-// variable root = creando el root(en el documento.trayendo el Elemento con el id ('root'));
+
 
 
 root.render(
-  // <StrictMode>
-  //   <CardCurso useNameImg="punisher" useName="Punicher" useDescription="DEscrpionjkdgjkhsgk" buttonLink="btn"/>
-  //   <CardCurso useNameImg="wolverin" useName="Wolverin" useDescription="DEscrpionjkdgjkhsgk" buttonLink="btn"/>
-  //   <CardCurso useNameImg="deadpool" useName="Deadpool" useDescription="DEscrpionjkdgjkhsgk" buttonLink="btn"/>
-  // </StrictMode>,
-  <StrictMode>
-  <div className="grid grid-flow-row md:grid-flow-col justify-items-center bg-gray-300 dark:bg-gray-900 p-4 m-4 align-content-center">
-    <CardCurso
-    useNameImg="punisher" useName="Punicher" useDescription="DEscrpionjkdgjkhsgk" buttonLink="btn" isFollowing
-    />
-    
-    <CardCurso 
-    useNameImg="wolverin" useName="Wolverin" useDescription="DEscrpionjkdgjkhsgk" buttonLink="btn" isFollowing={false}
-    />
+  <StrictMode >
 
-<CardCurso
-    useNameImg="deadpool" useName="Deadpool" useDescription="DEscrpionjkdgjkhsgk" buttonLink="btn" 
-    />
-  </div>
-  </StrictMode>,
-
-
-
-  
+    <ThemeProvider theme={ThemeLigthDark}>
+      <CssBaseline />
+      <CardCurso useNameImg={"wolverin"} useName={"wolverine"} useDescription={"wolverine wolverine wolverine"} buttonLink={"Ir al curso"} isFollowing={true} />
+      <CardCurso useNameImg={"deadpool"} useName={"deadpool"} useDescription={"dedpool dedpool dedpool"} buttonLink={"Ir al curso"} isFollowing={true} />
+    </ThemeProvider>
+  </StrictMode>
 );
-//de root.render se va a renderizar el componente App
+
+
+
 
