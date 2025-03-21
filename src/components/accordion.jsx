@@ -18,14 +18,13 @@ export default function AccordionDtc() {
           aria-controls="panel1-content"
           id="panel1-header"
           sx={{
-            backgroundColor: 'blue', // Estilo personalizado
             marginTop: 2, // Usando el sistema de spacing de MUI
           }}
         >
           <Typography component="span">Accordion 1</Typography>
         </AccordionSummary>
         <AccordionDetails
-          sx={{ backgroundColor: 'red' }} 
+          sx={{ border: '1px solid red' }} 
         >
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
           malesuada lacus ex, sit amet blandit leo lobortis eget.

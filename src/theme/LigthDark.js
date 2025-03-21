@@ -7,7 +7,7 @@ export const ThemeLigthDark = createTheme({
       palette: {
         mode: 'dark',
         primary: {
-          main: '#361c8a',
+          main: '#0697fa',
         },
         secondary: {
           main: '#cd32f5',
