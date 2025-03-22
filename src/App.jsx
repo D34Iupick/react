@@ -1,6 +1,5 @@
 import CardCurso from './components/card-curso';
 
-
 const anteHeroes = [
   { 
     id:1,
@@ -8,7 +7,7 @@ const anteHeroes = [
     name: "Logan", 
     UserNameImg:"wolverin", 
     description:"Es un mutante con garras retráctiles de adamantium y un poderoso factor de curación que lo hace casi inmortal. Es miembro de los X-Men y tiene un carácter rudo y solitario. Su pasado misterioso y su lucha interna entre su naturaleza animal y su humanidad son aspectos clave de su personaje.", 
-    isFollowing: true
+    isFollowing: false
   },
   { 
     id:2,
@@ -29,17 +28,25 @@ const anteHeroes = [
 ]
 
 export default function App() {
- 
+  // console.log('render with anteHeroes', anteHeroes);
   return (
      
-          <div className='w-screen flex flex-wrap justify-center border-amber-600 border-4 bg-cyan-400'>
+          <div className='w-screen flex flex-wrap justify-center border-sky-400 border-4 bg-cyan-900'>
             {
-              anteHeroes.map((anteHeroes) => (
-                <CardCurso key={anteHeroes.id} useNameImg={anteHeroes.UserNameImg} useDescription={anteHeroes.description} isFollowing={anteHeroes.isFollowing}>
-                  <strong>{anteHeroes.userName}</strong>
-                  <p>{anteHeroes.name}</p>
-                </CardCurso>  
-              ))
+              anteHeroes.map(
+                (anteHeroes) => 
+               (
+                <CardCurso 
+                  key={anteHeroes.id} 
+                  useNameImg={anteHeroes.UserNameImg} 
+                  useDescription={anteHeroes.description} 
+                  isFollowing={anteHeroes.isFollowing} 
+                  name={anteHeroes.name} 
+                  userName={anteHeroes.userName}
+                  initialIsFollowing={anteHeroes.isFollowing}
+                /> 
+              )
+            )
             }
           </div>
         
